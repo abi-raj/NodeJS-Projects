@@ -23,7 +23,7 @@ router.post('/api/add',checkBook, (req, res) => {
     res.status(200).json({message: 'book added'});
 });
 
-router.get('/add', async (req, res) => {
+router.get('/add',  (req, res) => {
     res.render('addBook');
 });
 

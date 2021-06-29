@@ -4,10 +4,112 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/add.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Add New Book</title>
 </head>
 <body>
-    <form  method="post" action="/add">
+    <div class="flex h-screen justify-center items-center">
+    <div class="max-w-xs rounded overflow-hidden shadow-lg ">
+        
+       <p class="text-center p-4 lg:text-2xl text-purple-500">Add new book</p>
+       <div class="p-10">
+       <div class="md:flex md:items-center mb-6">
+           
+       <div>
+        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+           Title
+          </label>
+       </div>
+       <div class="md:w-2/3">
+        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text" name="title" id="title">
+      </div>
+    </div>
+
+    <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+            Author
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="author" name="author" id="author">
+       </div>
+     </div>
+
+     <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+            Language
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text" name="language" id="language">
+       </div>
+     </div>
+     <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+            Pages
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="number" name="pages" id="pages">
+       </div>
+     </div>
+     <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+            Year
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="number" name="year" id="year">
+       </div>
+     </div>
+     <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
+            Country
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text" name="country" id="country">
+       </div>
+     </div>
+     <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+            Image
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text" name="image" id="image">
+       </div>
+     </div>
+     <div class="md:flex md:items-center mb-6">
+           
+        <div>
+         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+            Link
+           </label>
+        </div>
+        <div class="md:w-2/3">
+         <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text" name="link" id="link">
+       </div>
+     </div>
+     <button type="button" onclick="addBook()" class="px-7 py-3 bg-purple-500 text-white rounded" >Add</button>
+    </div>
+    </div>
+</div>
+        <!-- <div class="text-center">
      
         <label>Title</label><input type="text" name="title" id="title"/>
         <label>Author</label><input type="text" name="author" id="author"/>
@@ -17,11 +119,10 @@
         <label>Country</label><input type="text" name="country" id="country"/>
         <label>Image Link</label><input type="text" name="image" id="image"/>
         <label>Wiki link</label><input type="text" name="link" id="link"/>
-        <input type="submit" value="Add"/>
-    </form>
+        <button type="button" onclick="addBook()" >Add</button> -->
+    </div>
+    </div>
 
-    <!-- <% if(errors) { %>
-        <%= errors %>
-    <%} %> -->
+ 
 </body>
 </html>
