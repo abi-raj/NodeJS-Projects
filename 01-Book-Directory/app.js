@@ -14,45 +14,8 @@ app.use(express.static((__dirname, 'public')));
 //Route configs
 app.use(getBookController);
 app.use(addBookController);
-app.use(updateBookController);
+app.use(updateBookController); //UI part of this is not yet completed
 app.use(deleteBookController);
-
-
-
-
-//IGNORE
-//app routes
-// app.get('/', (req, res) => {
-
-//     res.render('home', {
-//         data: bookD(),
-//     });
-// })
-// app.get('/add', (req, res) => {
-//     res.render('addBook', {
-//         errors: undefined
-//     });
-// })
-// app.post('/add', checkBook, (req, res) => {
-//     // console.log(req.body);
-
-//     res.redirect('/');
-// });
-// app.delete('/delete/:title',(req, res) => {
-//     const bookTitle = req.params.title;
-//     deleteBookJs(bookTitle);
-//     res.redirect('/');
-
-// })
-
-// app.put('/update', (req, res) => {
-//   const book = req.body;
-//   deleteBookJs(book.title);
-//   addBookJs(book);
-//   res.redirect('/');
-// //   res.json({status:true});
-// })
-
 
 
 

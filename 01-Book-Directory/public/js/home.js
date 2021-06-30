@@ -12,3 +12,10 @@ function onDelete(id) {
     });
 
 }
+
+function onEdit(id) {
+    console.log(document.getElementById('t' + id).innerHTML);
+    const title = document.getElementById('t' + id).innerHTML;
+    window.location.href='/update/' + title;
+
+}

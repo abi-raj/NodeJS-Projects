@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "build:css": "tailwind build src/style.css -o public/css/style.css"
+    "build:css": "tailwind build -i src/style.css -o public/css/style.css"
   },
   "author": "Abiraj",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.2.6",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
